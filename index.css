@@ -6,20 +6,56 @@ body{
 img{
 	float:right;
 	width:350px;
+	animation-name:picture;
+	animation-duration:0.5s;
+	animation-delay:2s;
+	animation-fill-mode: forwards;
+	opacity:0;
+}
+
+@keyframes picture{
+	from{opacity:0;}
+	to{opacity:100%;}
 }
 
 #basicInfo{
 	text-align:center;
 	font-size:150%;
 	line-height:1.5;
-	background-color:rgb(200,50,100,0.8);
-	margin:130px;
 	border-radius:20px;
+	margin:230px;
+	box-shadow:none;
+	animation-name:sample;
+	animation-duration:1.5s;
+	animation-delay:0.5s;
+	animation-fill-mode: forwards;
+}
 
+@keyframes sample{
+	0%  {background-color:rgb(100,100,0,0.1);box-shadow:none;}
+	90% {background-color:rgb(100,100,0,0.1);box-shadow:5px 5px 5px grey;}
+	100% {background-color:rgb(200,50,100,0.8);box-shadow:5px 5px 5px grey;}
+}
+
+#info{
+	border-radius:20px;
+}
+
+#per{
+	color:black;
+	animation-name:dis;
+	animation-duration:0.5s;
+	animation-delay:2s;
+	opacity:0;
+	animation-fill-mode:forwards;
+}
+
+@keyframes dis{
+	from{opacity:0;}
+	to{opacity:100;}
 }
 
 span{
-	font-size:200%;
 	color:rgb(50,100,200);
 }
 
@@ -45,23 +81,23 @@ ol{
 	line-height:1.5;
 }
 
-#quote{
+header p{
 	text-align:center;
 	font-size:30px;
 	margin:0;
 	background-color:rgb(50,100,200);
 	color:white;
-	position:absolute;
-	top:0;
-	left:0;
 	width:100%;
 	height:50px;
 	line-height:1.5;
+	position:absolute;
+	left:0;
+	top:0;
 }
+
 
 div{
 	margin:100px;
-
 }
 
 .red{
