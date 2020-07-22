@@ -25,18 +25,32 @@
 	  </div>
 	</nav>
 
-    <!--Name and picture-->
-    <div class="container">
-    <div id="basicInfo">
-    <p id="info"><img id="profile" src="profile.jpg"><br><br><span class="text-primary">Hi! Myself Tushar Dhingra.</span><br> I hail from the city of Gwalior<br> the land known for its food and forts.
-    </p>
-	</div>
-	</div>
+	<div class="container">
+	<div class="row">
+		<div class="col-sm-5 col-sm-offset-3">
+		<fieldset>
+			<form action="https://formspree.io/xdowyepl" method="POST">
+				<div class="form-group">
+					<label>Name</label>
+					<input type="text" class="form-control" name="Name" required>
+				</div>
 
-	<!--Quote-->
-	<footer class="page-footer text-center bg-primary">
-		<q>Just live the life in such a way that you will never regret about your past in the future</q>
-	</footer>
+				<div class="form-group">
+					<label>E-Mail</label>
+					<input type="email" class="form-control" name="mail_id">
+				</div>
+
+				<div class="form-group">
+					<label>Reviews</label>
+					<textarea rows="12" cols="30" class="form-control" name="review" required></textarea>
+				</div>
+
+				<button type="submit" class="btn btn-default btn">Submit</button>
+			</form>
+		</fieldset>
+	</div>
+	</div>
+	</div>
 
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
